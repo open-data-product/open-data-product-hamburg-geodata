@@ -4,6 +4,7 @@ import sys
 
 from lib.extract.data_extractor import extract_data
 from lib.tracking_decorator import TrackingDecorator
+from lib.transform.data_bounding_box_converter import convert_bounding_box
 from lib.transform.data_copier import copy_data
 from lib.transform.data_geometry_cleaner import clean_data_geometry
 from lib.transform.data_property_cleaner import clean_data_properties
@@ -56,6 +57,7 @@ def main(argv):
     clean_data_properties(source_path=workspace_path, results_path=workspace_path, clean=clean, quiet=quiet)
     clean_data_geometry(source_path=workspace_path, results_path=workspace_path, clean=clean, quiet=quiet)
     extend_data_properties(source_path=workspace_path, results_path=workspace_path, clean=clean, quiet=quiet)
+    convert_bounding_box(source_path=workspace_path, results_path=workspace_path, clean=clean, quiet=quiet)
 
 
 if __name__ == "__main__":
