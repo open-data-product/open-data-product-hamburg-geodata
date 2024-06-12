@@ -2,9 +2,14 @@
 id: hamburg-geodata
 name: Hamburg Geodata
 metadata:
-  ownership:
+  ownership: Open Lifeworlds
+  domain: geodata
   schema:
-description:
+    - id: unique feature ID (string)
+    - name: feature name (string)
+    - area: feature area in sqm (float)
+    - bounding_box: feature bounding box (float array)
+description: This data product provides Hamburg geodata on different hierarchy levels
 input_ports:
   - id: hamburg-administrative-boundaries
     metadata:
@@ -16,10 +21,23 @@ input_ports:
     files:
       - https://geodienste.hamburg.de/download?url=https://geodienste.hamburg.de/HH_WFS_Verwaltungsgrenzen&f=json
 output_ports:
+  - id: hamburg-geodata-geojson
+    metadata:
+      name: Hamburg geodata
+      author: Open Lifeworlds
+      url: https://github.com/open-lifeworlds/open-lifeworlds-data-product-hamburg-geodata/tree/main/data
+      license: CC-BY-4.0
+      updated: 2024-06-12
+    files:
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-hamburg-geodata/main/data/hamburg-administrative-boundaries/hamburg-city.geojson
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-hamburg-geodata/main/data/hamburg-administrative-boundaries/hamburg-districts.geojson
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-hamburg-geodata/main/data/hamburg-administrative-boundaries/hamburg-quarters.geojson
+      - https://raw.githubusercontent.com/open-lifeworlds/open-lifeworlds-data-product-hamburg-geodata/main/data/hamburg-administrative-boundaries/hamburg-areas.geojson
 metrics:
   - quality:
+      - completeness
   - operational:
-classification:
+classification: source-aligned
 tags:
   - hamburg
   - geodata
