@@ -1,62 +1,74 @@
-[![Issues](https://img.shields.io/github/issues/open-lifeworlds/open-lifeworlds-data-product-hamburg-geodata)](https://github.com/open-lifeworlds/open-lifeworlds-data-product-hamburg-geodata/issues)
+[![Issues](https://img.shields.io/github/issues/open-data-product/open-data-product-hamburg-geodata)](https://github.com/open-data-product/open-data-product-hamburg-geodata/issues)
 
 <br />
 <p align="center">
-  <a href="https://github.com/open-lifeworlds/open-lifeworlds-data-product-hamburg-geodata">
-    <img src="logo_with_text.png" alt="Logo" height="80">
+  <a href="https://github.com/open-data-product/open-data-product-hamburg-geodata">
+    <img src="logo-with-text.png" alt="Logo" style="height: 80px; ">
   </a>
 
-  <h1 align="center">Open Lifeworlds Data Product - Hamburg geodata</h1>
+  <h1 align="center">Hamburg Geodata</h1>
 
   <p align="center">
-    Data product providing Hamburg geodata</a> 
+    Data product providing geodata 
   </p>
 </p>
 
 ## About The Project
 
-See [data product canvas](docs/data-product-canvas.md).
+See [data product canvas](docs/data-product-canvas.md) and [ODPS canvas](./docs/odps-canvas.md).
 
 ### Built With
 
 * [Python](https://www.python.org/)
+* [uv](https://docs.astral.sh/uv/)
+* [ruff](https://docs.astral.sh/ruff/)
 
 ## Installation
 
-Install the following dependencies to fulfill the requirements for this project to run.
+Install uv, see https://github.com/astral-sh/uv?tab=readme-ov-file#installation.
 
-```shell script
-python -m pip install --upgrade pip
-pip install -r requirements.txt
+```shell
+# On macOS and Linux.
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
 ## Usage
 
+Run this command to generate and activate a virtual environment.
+
+```shell
+uv venv
+source .venv/bin/activate
+```
+
+Run this command to re-install the Open Data Product Python library.
+
+```shell
+uv pip install --no-cache-dir git+https://github.com/open-data-product/open-data-product-python-lib.git
+```
+
 Run this command to start the main script.
 
-```shell script
-python main.py [OPTION]...
+```shell
+Usage: main.py [OPTIONS]
 
-  -h, --help                           show this help
-  -c, --clean                          clean intermediate results before start
-  -q, --quiet                          do not log outputs
-
-Examples:
-  python main.py -c
+Options:
+  --clean BOOLEAN  Regenerate results
+  --quiet BOOLEAN  Do not log outputs
+  --help           Show this message and exit.
 ```
 
 ## Roadmap
 
-See the [open issues](https://github.com/open-lifeworlds/open-lifeworlds-data-product-hamburg-geodata/issues) for a list of proposed features (and
+See the [open issues](https://github.com/open-data-product/open-data-product-hamburg-geodata/issues) for a list of proposed features (and
  known issues).
 
 ## License
 
-Source data distributed under [Datenlizenz Deutschland – Namensnennung – Version 2.0](https://www.govdata.de/dl-de/by-2-0) by [Freie und Hansestadt Hamburg,
-Landesbetrieb Geoinformation und Vermessung](https://www.hamburg.de/bsw/landesbetrieb-geoinformation-und-vermessung/).
+Source data distributed under [Datenlizenz Deutschland Namensnennung 2.0](https://www.govdata.de/dl-de/by-2-0) by [Freie und Hansestadt Hamburg, Landesbetrieb Geoinformation und Vermessung (LGV)](https://metaver.de/trefferanzeige?docuuid=F5A1078F-25C2-4111-B497-877CDCACD9D5&isAddress=true).
 
 Data product distributed under the [CC-BY 4.0 License](https://creativecommons.org/licenses/by/4.0/). See [LICENSE.md](./LICENSE.md) for more information.
 
 ## Contact
 
-openlifeworlds@gmail.com
+opendataproduct@gmail.com
