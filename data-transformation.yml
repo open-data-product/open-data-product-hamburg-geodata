@@ -6,6 +6,8 @@ input_ports:
         target_file_name: hamburg-city.geojson
         target_projection_number: 4326
         properties:
+          - { name: id, value: "0" }
+          - { name: name, value: "Hamburg" }
           - { name: fhh, remove: True }
       - source_file_name: app_bezirke_EPSG_4326.json
         target_file_name: hamburg-districts.geojson
