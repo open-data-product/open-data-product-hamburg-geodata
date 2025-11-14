@@ -7,7 +7,7 @@
 * description: Data product providing Hamburg geodata
 * url: https://github.com/open-data-product/open-data-product-hamburg-geodata
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-29
 
 ## Input Ports
 
@@ -29,7 +29,7 @@
 * owner: Open Data Product
 * url: https://github.com/open-data-product/open-data-product-hamburg-geodata/tree/main/data/02-silver/hamburg-administrative-boundaries
 * license: CC-BY 4.0
-* updated: 2025-10-27
+* updated: 2025-10-29
 
 **Files**
 

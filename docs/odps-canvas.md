@@ -6,14 +6,14 @@
 
 ### Basic Information
 
-* output file formats: geojson
+* output file formats: geojson, json
 * categories: geodata
 * description: Data product providing Hamburg geodata
-* logo URL: https://raw.githubusercontent.com/open-data-product/open-data-product-hamburg-geodata/refs/heads/main/logo-with-text.png
+* logo URL: https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/refs/heads/main/logo-with-text.png
 * product ID: hamburg-geodata
 * product series: Hamburg Geodata Series
 * status: active
-* tags: Hamburg
+* tags: hamburg, geodata
 * type: source-aligned
 * value proposition: Providing Hamburg geodata
 * version: 1.0

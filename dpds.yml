@@ -1,0 +1,51 @@
+---
+dataProductDescriptor: data-product-descriptor
+info:
+  fullyQualifiedName: urn:dpds:opendataproduct:dataproducts:hamburg-geodata:1.0
+  name: Hamburg Geodata
+  version: '1.0'
+  domain: domain
+  owner:
+    id: Open Data product
+    name: Open Data product
+  id: hamburg-geodata
+  entityType:
+  displayName: Hamburg Geodata
+  description: Data product providing Hamburg geodata
+  contactPoints:
+interfaceComponents:
+  outputPorts:
+    - promises:
+      expectations:
+      obligations:
+      id: hamburg-administrative-boundaries
+      fullyQualifiedName: hamburg-administrative-boundaries
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description:
+      componentGroup:
+      tags:
+      externalDocs:
+  inputPorts:
+    - promises:
+      expectations:
+      obligations:
+      id: hamburg-administrative-boundaries
+      fullyQualifiedName: hamburg-administrative-boundaries
+      entityType:
+      name: ''
+      version:
+      displayName:
+      description: ALKIS Verwaltungsgrenzen Hamburg
+      componentGroup:
+      tags:
+      externalDocs:
+  discoveryPorts:
+  observabilityPorts:
+  controlPorts:
+internalComponents:
+components:
+tags:
+externalDocs:

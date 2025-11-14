@@ -1,23 +1,52 @@
 ---
 schema: https://opendataproducts.org/v3.1/schema/odps.yaml
-version: 3.1
+version: '3.1'
 product:
-  dataHolder:
-    URL: "https://opendataproduct.de"
   en:
-    name: "Hamburg Geodata"
-    productID: "hamburg-geodata"
-    valueProposition: "Providing Hamburg geodata"
-    description: "Data product providing Hamburg geodata"
-    productSeries: "Hamburg Geodata Series"
-    visibility: "public"
-    status: "active"
-    version: "1.0"
-    categories:
-      - geodata
-    tags:
-      - Hamburg
-    type: "source-aligned"
-    logoURL: "https://raw.githubusercontent.com/open-data-product/open-data-product-hamburg-geodata/refs/heads/main/logo-with-text.png"
+    name: Hamburg Geodata
+    productID: hamburg-geodata
+    status: active
+    type: source-aligned
+    visibility: public
     OutputFileFormats:
       - geojson
+      - json
+    brandSlogan:
+    categories:
+      - geodata
+    description: Data product providing Hamburg geodata
+    logoURL: https://raw.githubusercontent.com/open-data-product/open-data-product-berlin-lor-population-source-aligned/refs/heads/main/logo-with-text.png
+    productSeries: Hamburg Geodata Series
+    standards: []
+    tags:
+      - hamburg
+      - geodata
+    useCases: []
+    valueProposition: Providing Hamburg geodata
+    version: '1.0'
+  sla: []
+  dataAccess:
+  dataHolder:
+    URL: https://opendataproduct.de
+    addressCountry:
+    addressLocality:
+    addressRegion:
+    streetAddress:
+    postalCode:
+    telephone:
+    aggregateRating:
+    businessDomain:
+    description:
+    logoURL:
+    parentOrganization:
+    ratingCount:
+    slogan:
+    taxID:
+    vatID:
+  dataOps:
+  dataQuality: []
+  license:
+  pricingPlans:
+  support:
+  recommendedDataProducts: []
+details:
