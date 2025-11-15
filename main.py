@@ -116,6 +116,7 @@ def main(clean, quiet):
         data_product_manifest=data_product_manifest,
         results_path=script_path,
         data_path=silver_path,
+        map_location=[53.5467185,9.9731889],
         clean=True,
         quiet=quiet,
     )
