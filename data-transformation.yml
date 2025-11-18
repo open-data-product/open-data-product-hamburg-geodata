@@ -19,21 +19,22 @@ input_ports:
         target_file_name: hamburg-district-regions.geojson
         target_projection_number: 4326
         properties:
+          - { name: stadtteil_schluessel, remove: True }
+          - { name: stadtteil_nummer, rename: id, zfill: 4 }
           - { name: stadtteil_name, rename: name }
-          - { name: stadtteil_schluessel, rename: id }
-          - { name: stadtteil_nummer, remove: True }
           - { name: bezirk, rename: district_id, zfill: 2 }
           - { name: bezirk_name, rename: district_name }
       - source_file_name: app_ortsteile_EPSG_4326.json
         target_file_name: hamburg-quarters.geojson
         target_projection_number: 4326
         properties:
+          - { name: ortsteil_schluessel, remove: True }
+          - { name: ortsteil_nummer, rename: quarter_id_3, zfill: 3 }
           - { name: ortsteil_name, rename: name }
-          - { name: ortsteil_schluessel, rename: id }
-          - { name: ortsteil_nummer, remove: True }
-          - { name: stadtteil_schluessel, rename: district_region_id }
-          - { name: stadtteil_nummer, remove: True }
-          - { name: stadtteil_name, rename: district_region_name }
+          - { name: id, concat: ["bezirk", "stadtteil_nummer", "quarter_id_3"], zfill: 8 }
+          - { name: stadtteil_schluessel, remove: True }
+          - { name: stadtteil_nummer, rename: district_region_id, zfill: 4 }
+          - { name: stadtteil_name, rename: name }
           - { name: bezirk, rename: district_id, zfill: 2 }
           - { name: bezirk_name, rename: district_name }
 

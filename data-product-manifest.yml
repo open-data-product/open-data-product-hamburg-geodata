@@ -6,7 +6,7 @@ metadata:
   description: Data product providing Hamburg geodata
   url: https://github.com/open-data-product/open-data-product-hamburg-geodata
   license: CC-BY 4.0
-  updated: 2025-10-29
+  updated: 2025-10-31
   schema:
     - name: id
       description: unique feature ID (string)
@@ -37,7 +37,7 @@ output_ports:
       description:
       url: https://github.com/open-data-product/open-data-product-hamburg-geodata/tree/main/data/02-silver/hamburg-administrative-boundaries
       license: CC-BY 4.0
-      updated: 2025-10-29
+      updated: 2025-10-31
       schema:
     files:
       - https://raw.githubusercontent.com/open-data-product/open-data-product-hamburg-geodata/main/data/02-silver/hamburg-administrative-boundaries/hamburg-city.geojson
